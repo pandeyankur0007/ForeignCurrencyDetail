@@ -1,10 +1,6 @@
 package repo;
 
-import android.content.ContentValues;
-import android.database.sqlite.SQLiteDatabase;
-
 import model.CurrentCurrencyValue;
-
 
 /**
  * Created by ankur on 9/18/16.

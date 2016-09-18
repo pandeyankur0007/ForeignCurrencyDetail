@@ -18,14 +18,14 @@ import repo.TransactionHistoryRepo;
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION =1;
+    private static final int DATABASE_VERSION = 1;
     // Database Name
     private static final String DATABASE_NAME = "CurrencyExchanger.db";
     private static final String TAG = DBHelper.class.getSimpleName().toString();
 
     public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        Log.d("<<<<","I am in DBHelper instance");
+        Log.d("<<<<", "I am in DBHelper instance");
     }
 
 
@@ -36,7 +36,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(CurrentCurrencyValueRepo.createTable());
         db.execSQL(AggregateCurrencyRepo.createTable());
 
-        Log.d("<<<<","I am in creating table instances instance");
+        Log.d("<<<<", "I am in creating table instances instance");
 
     }
 
@@ -49,11 +49,10 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public  SQLiteDatabase getWriteDB() {
+    public SQLiteDatabase getWriteDB() {
 
         return getWritableDatabase();
     }
-
 
 
 }

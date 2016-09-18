@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="16"
         android:targetSdkVersion="23" />
 
     <application
@@ -24,11 +24,10 @@
         <activity
             android:name="com.augylab.ankur.foreignexchanger.AddRecordActivity"
             android:parentActivityName="com.augylab.ankur.foreignexchanger.HomeActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.augylab.ankur.foreignexchanger.HomeActivity" />
         </activity>
-        <activity android:name="com.augylab.ankur.foreignexchanger.CurrencyHistoryActivity" >
+        <activity
+            android:name="com.augylab.ankur.foreignexchanger.CurrencyHistoryActivity"
+            android:parentActivityName="com.augylab.ankur.foreignexchanger.HomeActivity" >
         </activity>
     </application>
 

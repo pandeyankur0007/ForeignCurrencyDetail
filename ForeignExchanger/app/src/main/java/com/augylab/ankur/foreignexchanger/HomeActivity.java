@@ -1,23 +1,17 @@
 package com.augylab.ankur.foreignexchanger;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.View;
-
 import java.util.ArrayList;
 
 import model.AggregateCurrency;
-import model.TransactionHistory;
 import repo.AggregateCurrencyRepo;
 
 public class HomeActivity extends AppCompatActivity implements CustomHomeAdapter.OnItemClickListener {
@@ -27,7 +21,6 @@ public class HomeActivity extends AppCompatActivity implements CustomHomeAdapter
     private RecyclerView.LayoutManager mLayoutManager;
     private ArrayList<AggregateCurrency> listArray = new ArrayList<>();
 
-    private ArrayList<String> listhistory = new ArrayList<>();
     final static int REQUEST_CODE = 101;
     final static int RESULT_CODE = 1;
 
@@ -43,19 +36,16 @@ public class HomeActivity extends AppCompatActivity implements CustomHomeAdapter
 
         mLayoutManager = new LinearLayoutManager(this);
         recordRecyclerView.setLayoutManager(mLayoutManager);
-       // dbHelper = new DatabaseManager();
+        // dbHelper = new DatabaseManager();
 
         refresh();
-
-
-
 
     }
 
     public void refresh() {
-       listArray = AggregateCurrencyRepo.getRecords(getApplicationContext());
-       mAdapter = new CustomHomeAdapter(this, listArray,this);
-       recordRecyclerView.setAdapter(mAdapter);
+        listArray = AggregateCurrencyRepo.getRecords(getApplicationContext());
+        mAdapter = new CustomHomeAdapter(this, listArray, this);
+        recordRecyclerView.setAdapter(mAdapter);
     }
 
     @Override

@@ -1,9 +1,6 @@
 package repo;
 
-import android.content.ContentValues;
-import android.database.sqlite.SQLiteDatabase;
 
-import com.augylab.ankur.foreignexchanger.DBHelper;
 
 import model.TransactionHistory;
 

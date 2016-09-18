@@ -18,12 +18,10 @@
         <activity
             android:name=".AddRecordActivity"
             android:parentActivityName=".HomeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.augylab.ankur.foreignexchanger.HomeActivity" />
         </activity>
-        <activity android:name=".CurrencyHistoryActivity">
-
+        <activity
+            android:name=".CurrencyHistoryActivity"
+            android:parentActivityName=".HomeActivity">
         </activity>
     </application>
 

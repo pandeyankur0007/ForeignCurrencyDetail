@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:3:5-49
 		INJECTED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/ma
 		INJECTED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml
 		INJECTED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:5:5-28:19
+ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:5:5-26:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
@@ -48,21 +48,17 @@ ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/ma
 	android:name
 		ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:15:27-74
 activity#com.augylab.ankur.foreignexchanger.AddRecordActivity
-ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:18:9-24:20
+ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:18:9-21:20
 	android:parentActivityName
 		ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:20:13-55
 	android:name
 		ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:19:13-46
-meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:21:13-23:83
-	android:value
-		ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:23:17-80
-	android:name
-		ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:22:17-63
 activity#com.augylab.ankur.foreignexchanger.CurrencyHistoryActivity
-ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:25:9-27:20
+ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:22:9-25:20
+	android:parentActivityName
+		ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:24:13-55
 	android:name
-		ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:25:19-58
+		ADDED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml:23:13-52
 uses-sdk
 INJECTED from /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] /home/ankur/AndroidStudioProjects/AugyLab/ForeignExchanger/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78

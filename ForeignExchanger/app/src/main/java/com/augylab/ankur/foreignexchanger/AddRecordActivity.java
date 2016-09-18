@@ -28,14 +28,13 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
     public String date;
     public int qty;
     public double paidValue;
-    private int RESULT_CODE=1;
+    private int RESULT_CODE = 1;
     private Boolean debitStatus = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_record);
-
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -46,14 +45,11 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
         paidValueEt = (EditText) findViewById(R.id.paidValueEt);
         debitCheckBox = (CheckBox) findViewById(R.id.debitCheckBox);
         submitBtn = (Button) findViewById(R.id.submitBtn);
-
         submitBtn.setOnClickListener(this);
-
 
         sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date d = new Date();
         date = sdf.format(d);
-
         debitCheckBox.setOnCheckedChangeListener(this);
 
     }
@@ -66,16 +62,12 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
         paidValue = Double.parseDouble(paidValueEt.getText().toString());
         history = date + " " + qty + " " + paidValue + ",";
 
-        AggregateCurrency aggregateCurrency = new AggregateCurrency(code,paidValue,qty);
+        AggregateCurrency aggregateCurrency = new AggregateCurrency(code, paidValue, qty);
 
-        //DatabaseManager db = new DatabaseManager();
-
-        int result = AggregateCurrencyRepo.insert(aggregateCurrency,debitStatus,getApplicationContext());
-       // boolean result = db.saveRecord(new AddRecord(code, qty, paidValue, date, history),debitStatus);
-        Log.e("insert result : ", result+"");
+        int result = AggregateCurrencyRepo.insert(aggregateCurrency, debitStatus, getApplicationContext());
+        Log.e("insert result : ", result + "");
 
         Log.d("OutCome for date", date);
-
 
         if (result == 0) {
 
@@ -90,7 +82,6 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         if (isChecked) {
-            //addRecord.debit(qty, paidValue);
             debitStatus = true;
         }
     }

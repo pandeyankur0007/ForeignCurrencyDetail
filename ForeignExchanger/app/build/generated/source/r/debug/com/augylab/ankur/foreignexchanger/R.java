@@ -1645,14 +1645,16 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020048;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020049;
         public static final int abc_textfield_search_material=0x7f02004a;
-        public static final int arrow=0x7f02004b;
-        public static final int home=0x7f02004c;
-        public static final int notification_template_icon_bg=0x7f02004e;
-        public static final int refresh=0x7f02004d;
+        public static final int add=0x7f02004b;
+        public static final int arrow=0x7f02004c;
+        public static final int home=0x7f02004d;
+        public static final int notification_template_icon_bg=0x7f02004f;
+        public static final int refresh=0x7f02004e;
     }
     public static final class id {
         public static final int action0=0x7f0c005d;
-        public static final int action_arrow=0x7f0c006b;
+        public static final int action_add=0x7f0c006a;
+        public static final int action_arrow=0x7f0c006c;
         public static final int action_bar=0x7f0c0042;
         public static final int action_bar_activity_content=0x7f0c0000;
         public static final int action_bar_container=0x7f0c0041;
@@ -1667,7 +1669,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c003f;
         public static final int action_mode_bar_stub=0x7f0c003e;
         public static final int action_mode_close_button=0x7f0c0024;
-        public static final int action_refresh=0x7f0c006a;
+        public static final int action_refresh=0x7f0c006b;
         public static final int activity_chooser_view_content=0x7f0c0025;
         public static final int alertTitle=0x7f0c0031;
         public static final int always=0x7f0c001d;
@@ -1812,7 +1814,8 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f040029;
     }
     public static final class menu {
-        public static final int activity_main_menu=0x7f0d0000;
+        public static final int activity_history_menu=0x7f0d0000;
+        public static final int activity_main_menu=0x7f0d0001;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
